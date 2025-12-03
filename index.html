@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola Mundo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>✨ Hola Mundo Elegante ✨</title>
+  <style>
+    /* Reset y configuración básica */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      color: white;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      padding: 2.5rem;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      max-width: 90%;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1.2rem;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      background: linear-gradient(to right, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+      -webkit-background-clip: text;
+      background-clip: assistant; /* fallback */
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    /* Animación suave al cargar */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.3rem;
+      }
+      .container {
+        padding: 1.8rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Hola mundo</h1>
+  <div class="container">
+    <h1>Hola Mundo</h1>
+    <p>Bienvenido a una página elegante, simple y moderna. 🌍</p>
+  </div>
 </body>
 </html>
