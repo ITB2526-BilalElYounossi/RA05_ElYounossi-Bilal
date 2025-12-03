@@ -1,57 +1,516 @@
-
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portafoli de [Nom]</title>
-  <link rel="stylesheet" href="css/estils.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo Elegante</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-beige: #f8f5f0;
+            --color-arena: #e8e1d1;
+            --color-gris-suave: #d9d4c7;
+            --color-gris-medio: #a8a396;
+            --color-gris-oscuro: #5a564e;
+            --color-terracota: #c78b70;
+            --color-verde-oliva: #9a9b73;
+            --color-azul-suave: #a7b5c6;
+            --sombra-suave: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --sombra-media: 0 8px 30px rgba(0, 0, 0, 0.12);
+            --radio-curva: 24px;
+            --radio-curva-peque: 16px;
+            --transicion: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--color-beige) 0%, var(--color-arena) 100%);
+            font-family: 'Raleway', sans-serif;
+            color: var(--color-gris-oscuro);
+            min-height: 100vh;
+            overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(167, 181, 198, 0.08) 0%, rgba(232, 225, 209, 0) 70%);
+            z-index: -1;
+            animation: rotate 25s linear infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .contenedor-principal {
+            width: 95%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .tarjeta-principal {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(217, 212, 199, 0.4);
+            border-radius: var(--radio-curva);
+            box-shadow: var(--sombra-media);
+            overflow: hidden;
+            position: relative;
+            transition: var(--transicion);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 85vh;
+        }
+
+        .tarjeta-principal:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+        }
+
+        .panel-izquierdo {
+            background: linear-gradient(135deg, var(--color-arena) 0%, var(--color-beige) 100%);
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .panel-derecho {
+            background: white;
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+
+        .curva-divisoria {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 120%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 800'%3E%3Cpath fill='%23f8f5f0' fill-opacity='0.8' d='M0,224L48,234.7C96,245,192,267,288,272C384,277,480,267,576,266.7C672,267,768,277,864,277.3C960,277,1056,267,1152,266.7C1248,267,1344,277,1392,282.7L1440,288L1440,800L1392,800C1344,800,1248,800,1152,800C1056,800,960,800,864,800C768,800,672,800,576,800C480,800,384,800,288,800C192,800,96,800,48,800L0,800Z'%3E%3C/path%3E%3C/svg%3E") bottom no-repeat;
+            background-size: cover;
+            z-index: 1;
+        }
+
+        .decoracion-izquierda {
+            position: absolute;
+            top: 20%;
+            left: -50px;
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(45deg, var(--color-terracota), var(--color-verde-oliva));
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            opacity: 0.15;
+            z-index: 0;
+        }
+
+        .decoracion-derecha {
+            position: absolute;
+            bottom: 15%;
+            right: -70px;
+            width: 180px;
+            height: 180px;
+            background: linear-gradient(45deg, var(--color-azul-suave), var(--color-gris-medio));
+            border-radius: 30% 70% 60% 40% / 40% 60% 30% 70%;
+            opacity: 0.1;
+            z-index: 0;
+        }
+
+        .titulo-principal {
+            font-family: 'Playfair Display', serif;
+            font-size: 4.5rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+            background: linear-gradient(110deg, var(--color-gris-oscuro) 0%, var(--color-terracota) 45%, var(--color-gris-oscuro) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            z-index: 2;
+        }
+
+        .subtitulo {
+            font-size: 1.4rem;
+            color: var(--color-gris-medio);
+            margin-bottom: 2rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .texto-bienvenida {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: var(--color-gris-oscuro);
+            position: relative;
+            z-index: 2;
+            max-width: 500px;
+        }
+
+        .boton-elegante {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, var(--color-terracota) 0%, #b87a60 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: var(--transicion);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            z-index: 2;
+            box-shadow: 0 4px 15px rgba(199, 139, 112, 0.4);
+        }
+
+        .boton-elegante::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%);
+            opacity: 0;
+            transition: var(--transicion);
+            z-index: -1;
+        }
+
+        .boton-elegante:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(199, 139, 112, 0.6);
+        }
+
+        .boton-elegante:hover::before {
+            opacity: 1;
+        }
+
+        .boton-elegante:active {
+            transform: translateY(1px);
+        }
+
+        .elementos-flotantes {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .elemento-flotante {
+            width: 60px;
+            height: 60px;
+            background: white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--sombra-suave);
+            transition: var(--transicion);
+            border: 1px solid var(--color-gris-suave);
+        }
+
+        .elemento-flotante:hover {
+            transform: translateY(-5px) rotate(5deg);
+            box-shadow: var(--sombra-media);
+            background: var(--color-terracota);
+            color: white;
+        }
+
+        .figura-abstracta {
+            position: absolute;
+            opacity: 0.08;
+            z-index: 1;
+        }
+
+        .figura-1 {
+            top: 10%;
+            right: 15%;
+            width: 120px;
+            height: 120px;
+            background: var(--color-terracota);
+            clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+            transform: rotate(15deg);
+        }
+
+        .figura-2 {
+            bottom: 20%;
+            left: 10%;
+            width: 100px;
+            height: 100px;
+            background: var(--color-verde-oliva);
+            border-radius: 40% 60% 70% 30% / 30% 60% 40% 70%;
+            transform: rotate(-10deg);
+        }
+
+        .figura-3 {
+            top: 40%;
+            left: 5%;
+            width: 80px;
+            height: 80px;
+            background: var(--color-azul-suave);
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        }
+
+        .mensaje-bienvenida {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.8rem;
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--color-gris-oscuro);
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .mensaje-bienvenida::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--color-terracota), var(--color-verde-oliva));
+            border-radius: 2px;
+        }
+
+        .descripcion-secundaria {
+            font-size: 1.2rem;
+            color: var(--color-gris-medio);
+            margin-bottom: 2rem;
+            line-height: 1.7;
+            max-width: 600px;
+        }
+
+        .estadisticas {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .estadistica {
+            text-align: center;
+        }
+
+        .numero {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--color-terracota);
+            margin-bottom: 0.5rem;
+        }
+
+        .etiqueta {
+            font-size: 0.9rem;
+            color: var(--color-gris-medio);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .particulas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        @media (max-width: 900px) {
+            .tarjeta-principal {
+                grid-template-columns: 1fr;
+                height: auto;
+                margin-top: 5rem;
+                margin-bottom: 5rem;
+            }
+            
+            .panel-izquierdo, .panel-derecho {
+                padding: 2rem;
+            }
+            
+            .titulo-principal {
+                font-size: 3.2rem;
+            }
+            
+            .mensaje-bienvenida {
+                font-size: 2.8rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .titulo-principal {
+                font-size: 2.5rem;
+            }
+            
+            .mensaje-bienvenida {
+                font-size: 2.2rem;
+            }
+            
+            .texto-bienvenida, .descripcion-secundaria {
+                font-size: 1rem;
+            }
+            
+            .elementos-flotantes {
+                flex-wrap: wrap;
+            }
+            
+            .tarjeta-principal {
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>El meu Portafoli</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inici</a></li>
-        <li><a href="projectes.html">Projectes</a></li>
-        <li><a href="#contacte">Contacte</a></li>
-      </ul>
-    </nav>
-  </header>
+    <div class="contenedor-principal">
+        <div class="tarjeta-principal">
+            <div class="panel-izquierdo">
+                <div class="decoracion-izquierda"></div>
+                <h1 class="titulo-principal">Hola Mundo</h1>
+                <p class="subtitulo">Diseño elegante y sofisticado</p>
+                <p class="texto-bienvenida">Bienvenido a una experiencia visual única donde las curvas suaves y los colores neutros crean una armonía perfecta para tu contenido.</p>
+                <button class="boton-elegante">Explorar más</button>
+                <div class="elementos-flotantes">
+                    <div class="elemento-flotante">🎨</div>
+                    <div class="elemento-flotante">✨</div>
+                    <div class="elemento-flotante">💫</div>
+                </div>
+                <div class="figura-abstracta figura-1"></div>
+                <div class="figura-abstracta figura-2"></div>
+            </div>
+            <div class="panel-derecho">
+                <div class="curva-divisoria"></div>
+                <div class="decoracion-derecha"></div>
+                <h2 class="mensaje-bienvenida">Hola Mundo</h2>
+                <p class="descripcion-secundaria">Esta página combina la elegancia del diseño minimalista con toques de creatividad a través de formas orgánicas y una paleta de colores neutros que transmiten serenidad y profesionalismo.</p>
+                <div class="estadisticas">
+                    <div class="estadistica">
+                        <div class="numero">98%</div>
+                        <div class="etiqueta">Satisfacción</div>
+                    </div>
+                    <div class="estadistica">
+                        <div class="numero">45+</div>
+                        <div class="etiqueta">Diseños</div>
+                    </div>
+                </div>
+                <div class="figura-abstracta figura-3"></div>
+            </div>
+        </div>
+    </div>
 
-  <main>
-    <section class="presentacio">
-      <h2>Hola! Sóc [Nom]</h2>
-      <p>Estudiant d’ASIX a l’ITB.</p>
-    </section>
+    <script>
+        // Efecto de partículas flotantes
+        document.addEventListener('DOMContentLoaded', () => {
+            const particulas = document.createElement('div');
+            particulas.className = 'particulas';
+            document.body.appendChild(particulas);
 
-    <section class="projectes-destacats">
-      <article>
-        <h3>Projecte 1: Web Estàtica</h3>
-        <a href="projecte1.html">Veure més</a>
-      </article>
-      <article>
-        <h3>Projecte 2: API REST</h3>
-        <a href="projecte2.html">Veure més</a>
-      </article>
-    </section>
+            // Crear partículas
+            for (let i = 0; i < 15; i++) {
+                const particula = document.createElement('div');
+                particula.style.position = 'absolute';
+                particula.style.width = Math.random() * 8 + 2 + 'px';
+                particula.style.height = particula.style.width;
+                particula.style.backgroundColor = `rgba(167, 181, 198, ${Math.random() * 0.3 + 0.1})`;
+                particula.style.borderRadius = '50%';
+                particula.style.top = Math.random() * 100 + '%';
+                particula.style.left = Math.random() * 100 + '%';
+                particula.style.animation = `float ${Math.random() * 10 + 8}s infinite ease-in-out`;
+                particula.style.animationDelay = `${Math.random() * 5}s`;
+                particulas.appendChild(particula);
 
-    <aside>
-      <p>Tecnologies: HTML, CSS, JavaScript</p>
-    </aside>
-  </main>
+                // Añadir clave de animación
+                const style = document.createElement('style');
+                style.innerHTML = `
+                    @keyframes float {
+                        0%, 100% { transform: translateY(0) rotate(0deg); }
+                        50% { transform: translateY(-20px) rotate(${Math.random() * 360}deg); }
+                    }
+                `;
+                document.head.appendChild(style);
+            }
 
-  <footer id="contacte">
-    <h3>Contacte</h3>
-    <form id="formContacte">
-      <input type="text" name="nom" placeholder="El teu nom" required pattern="[A-Za-zÀ-ÿ\s]{2,30}" />
-      <input type="email" name="email" placeholder="Correu electrònic" required />
-      <textarea name="missatge" placeholder="El teu missatge" required minlength="10"></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-    <p>&copy; 2025 [Nom]. Tots els drets reservats.</p>
-  </footer>
+            // Efecto de hover en los elementos flotantes
+            const elementos = document.querySelectorAll('.elemento-flotante');
+            elementos.forEach(elemento => {
+                elemento.addEventListener('mouseenter', () => {
+                    elemento.style.transform = 'translateY(-8px) rotate(10deg)';
+                });
+                elemento.addEventListener('mouseleave', () => {
+                    elemento.style.transform = 'translateY(0) rotate(0)';
+                });
+            });
 
-  <script src="js/script.js"></script>
+            // Efecto de scroll suave
+            const boton = document.querySelector('.boton-elegante');
+            boton.addEventListener('click', (e) => {
+                e.preventDefault();
+                document.body.scrollTo({
+                    top: document.body.scrollHeight,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Efecto de aparición al hacer scroll
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Aplicar efecto a elementos importantes
+            document.querySelectorAll('.panel-izquierdo, .panel-derecho, .elementos-flotantes').forEach(elemento => {
+                elemento.style.opacity = '0';
+                elemento.style.transform = 'translateY(20px)';
+                elemento.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(elemento);
+            });
+        });
+    </script>
 </body>
 </html>
