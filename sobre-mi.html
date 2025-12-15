@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Sobre Bilal El Younossi - Administrador de Sistemas y Redes">
         <title>Sobre Mí | Bilal El Younossi</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -10,7 +11,7 @@
     <body>
         <!-- Barra de navegación superior -->
         <header class="topbar">
-            <div class="logo">ElYounossi IT</div>
+            <div class="logo">BILAL EL YOUNOSSI</div>
             <nav class="nav-links">
                 <a href="index.html">Inicio</a>
                 <a href="proyectos.html">Proyectos</a>
@@ -23,32 +24,30 @@
         <!-- Contenido principal -->
         <main class="content">
             <section class="about-section">
-                <h1>Sobre Mí</h1>
+                <h2 class="section-title">Sobre Mí</h2>
                 <div class="about-content">
                     <p>Soy administrador de sistemas y redes con una pasión por la tecnología y la seguridad informática. Con más de 2 años de experiencia en el sector, me especializo en la gestión y protección de infraestructuras tecnológicas críticas para empresas.</p>
                     <p>Actualmente estoy buscando una empresa donde pueda crecer profesionalmente y aportar mi experiencia en administración de sistemas, redes y ciberseguridad. Me caracterizo por mi compromiso con la excelencia técnica y mi capacidad para resolver problemas complejos de manera eficiente y segura.</p>
                     <p>Domino tecnologías como Bash scripting para automatización de tareas, administración de Windows Server y Ubuntu Server, programación en Python y PowerShell para scripts de seguridad, y servicios en la nube AWS para despliegues escalables y seguros. Me mantengo constantemente actualizado en las últimas tendencias de ciberseguridad para ofrecer soluciones robustas y adaptadas a las necesidades actuales del mercado.</p>
-                    <p>Mi objetivo profesional es seguir creciendo como especialista en ciberseguridad y administración de sistemas, contribuyendo al éxito de las organizaciones a través de infraestructuras tecnológicas seguras y eficientes.</p>
+                </div>
+
+                <div class="page-nav">
+                    <a href="proyectos.html" class="prev">
+                        <i class="fas fa-arrow-left"></i> Proyectos
+                    </a>
+                    <a href="habilidades.html" class="next">
+                        Habilidades <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </section>
-
-            <!-- Navegación entre páginas -->
-            <div class="page-navigation">
-                <a href="proyectos.html" class="prev">
-                    <i class="fas fa-arrow-left"></i> Proyectos
-                </a>
-                <a href="habilidades.html" class="next">
-                    Habilidades <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
         </main>
 
         <footer>
-            <p>&copy; 2025 Bilal El Younossi. Administrador de Sistemas y Redes con especialidad en Ciberseguridad.</p>
+            <p>&copy; 2025 BILAL EL YOUNOSSI. Administrador de Sistemas y Redes con especialidad en Ciberseguridad.</p>
         </footer>
 
         <script>
-            // Highlight active page in navigation
+            // Highlight active page
             document.addEventListener('DOMContentLoaded', function() {
                 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
                 document.querySelectorAll('.nav-links a').forEach(link => {
