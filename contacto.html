@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto | Bilal El Younossi</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    <body>
+        <!-- Barra de navegación superior -->
+        <header class="topbar">
+            <div class="logo">ElYounossi IT</div>
+            <nav class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="proyectos.html">Proyectos</a>
+                <a href="sobre-mi.html">Sobre mí</a>
+                <a href="habilidades.html">Habilidades</a>
+                <a href="contacto.html" class="active">Contacto</a>
+            </nav>
+        </header>
+
+        <!-- Contenido principal -->
+        <main class="content">
+            <section class="contact-section">
+                <h1>Contacto</h1>
+                <p class="section-description">¿Estás interesado en contratar mis servicios o quieres saber más sobre mi trabajo? No dudes en contactarme a través de los siguientes medios:</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <span>bilal.elyounossi@email.com</span>
+                        <a href="mailto:bilal.elyounossi@email.com">Enviar email</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Teléfono</h3>
+                        <span>+34 600 000 000</span>
+                        <a href="tel:+34600000000">Llamar ahora</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Ubicación</h3>
+                        <span>Barcelona, España</span>
+                        <span>Disponible para proyectos remotos</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <span>Perfil profesional</span>
+                        <a href="#" target="_blank">Ver perfil</a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-section">
+                    <h2>Formulario de contacto</h2>
+                    <p>Completa el formulario y me pondré en contacto contigo lo antes posible:</p>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre completo:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Asunto:</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar mensaje</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Navegación entre páginas -->
+            <div class="page-navigation">
+                <a href="habilidades.html" class="prev">
+                    <i class="fas fa-arrow-left"></i> Habilidades
+                </a>
+                <a href="index.html" class="next">
+                    Página de Inicio <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Bilal El Younossi. Administrador de Sistemas y Redes con especialidad en Ciberseguridad.</p>
+        </footer>
+
+        <script>
+            // Highlight active page in navigation
+            document.addEventListener('DOMContentLoaded', function() {
+                const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    if (link.getAttribute('href') === currentPage) {
+                        link.classList.add('active');
+                    } else {
+                        link.classList.remove('active');
+                    }
+                });
+            });
+
+            // Form submission
+            document.querySelector('.contact-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('¡Gracias por tu mensaje! Me pondré en contacto contigo lo antes posible.');
+                this.reset();
+            });
+        </script>
+    </body>
+</html>
