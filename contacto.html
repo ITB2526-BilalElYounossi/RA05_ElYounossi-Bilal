@@ -1,84 +1,58 @@
-<div class="formulario-contacto">
-    <h3>Formulario de Contacto</h3>
-    <form action="#" method="post">
-        <div class="form-group">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+<!-- Añade este código al final de tu contacto.html, antes del cierre de </div> principal y antes del footer -->
+
+<div class="contact-section">
+    <h2 class="section-title">Formulario de Contacto</h2>
+    <p style="text-align: center; opacity: 0.9; margin-bottom: 2rem;">Completa el formulario y me pondré en contacto contigo lo antes posible.</p>
+    
+    <form id="formulario-contacto" style="max-width: 800px; margin: 0 auto;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
+            <div class="form-group">
+                <label for="nombre" style="display: block; margin-bottom: 0.5rem; color: var(--color-neon-azul); font-weight: bold;">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required
+                    style="width: 100%; padding: 0.8rem; background: rgba(0, 20, 40, 0.4); border: 1px solid rgba(0, 240, 255, 0.3); border-radius: 8px; color: var(--color-texto); font-family: var(--fuente-principal); font-size: 1rem; transition: all 0.3s;">
+            </div>
+            
+            <div class="form-group">
+                <label for="email" style="display: block; margin-bottom: 0.5rem; color: var(--color-neon-azul); font-weight: bold;">Email</label>
+                <input type="email" id="email" name="email" required
+                    style="width: 100%; padding: 0.8rem; background: rgba(0, 20, 40, 0.4); border: 1px solid rgba(0, 240, 255, 0.3); border-radius: 8px; color: var(--color-texto); font-family: var(--fuente-principal); font-size: 1rem; transition: all 0.3s;">
+            </div>
         </div>
         
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+        <div class="form-group" style="margin-bottom: 1.5rem;">
+            <label for="asunto" style="display: block; margin-bottom: 0.5rem; color: var(--color-neon-azul); font-weight: bold;">Asunto</label>
+            <input type="text" id="asunto" name="asunto" required
+                style="width: 100%; padding: 0.8rem; background: rgba(0, 20, 40, 0.4); border: 1px solid rgba(0, 240, 255, 0.3); border-radius: 8px; color: var(--color-texto); font-family: var(--fuente-principal); font-size: 1rem; transition: all 0.3s;">
         </div>
         
-        <div class="form-group">
-            <label for="asunto">Asunto:</label>
-            <input type="text" id="asunto" name="asunto" required>
+        <div class="form-group" style="margin-bottom: 1.5rem;">
+            <label for="mensaje" style="display: block; margin-bottom: 0.5rem; color: var(--color-neon-azul); font-weight: bold;">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="6" required
+                style="width: 100%; padding: 0.8rem; background: rgba(0, 20, 40, 0.4); border: 1px solid rgba(0, 240, 255, 0.3); border-radius: 8px; color: var(--color-texto); font-family: var(--fuente-principal); font-size: 1rem; line-height: 1.6; resize: vertical; transition: all 0.3s;"></textarea>
         </div>
         
-        <div class="form-group">
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        <div style="text-align: center;">
+            <button type="submit" class="btn" 
+                style="background: transparent; color: var(--color-neon-violeta); border: 1px solid var(--color-neon-violeta); padding: 0.8rem 2rem; font-family: var(--fuente-principal); cursor: pointer; transition: all 0.3s; font-weight: bold;">
+                Enviar Mensaje
+            </button>
         </div>
-        
-        <button type="submit" class="btn-enviar">Enviar Mensaje</button>
     </form>
 </div>
 
-<style>
-.formulario-contacto {
-    margin-top: 40px;
-    padding: 30px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-.formulario-contacto h3 {
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #555;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-input:focus, textarea:focus {
-    outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
-}
-
-.btn-enviar {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    width: 100%;
-    margin-top: 10px;
-    transition: background-color 0.3s;
-}
-
-.btn-enviar:hover {
-    background-color: #0056b3;
-}
-</style>
+<script>
+document.getElementById('formulario-contacto').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const nombre = document.getElementById('nombre').value;
+    const email = document.getElementById('email').value;
+    const asunto = document.getElementById('asunto').value;
+    const mensaje = document.getElementById('mensaje').value;
+    
+    // Aquí puedes agregar la lógica para enviar el formulario
+    // Por ahora, mostramos una alerta de ejemplo
+    alert(`¡Gracias ${nombre}! Tu mensaje ha sido enviado correctamente.\nTe responderé pronto a: ${email}`);
+    
+    // Limpiar el formulario
+    this.reset();
+});
+</script>
