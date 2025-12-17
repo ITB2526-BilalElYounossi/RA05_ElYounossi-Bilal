@@ -1,86 +1,84 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Contacto de Bilal El Younossi - Administrador de Sistemas y Redes">
-        <title>Contacto | Bilal El Younossi</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    </head>
-    <body>
-        <!-- Barra de navegación superior -->
-        <header class="topbar">
-            <div class="logo">BILAL EL YOUNOSSI</div>
-            <nav class="nav-links">
-                <a href="index.html">Inicio</a>
-                <a href="proyectos.html">Proyectos</a>
-                <a href="sobre-mi.html">Sobre mí</a>
-                <a href="habilidades.html">Habilidades</a>
-                <a href="contacto.html" class="active">Contacto</a>
-            </nav>
-        </header>
+<div class="formulario-contacto">
+    <h3>Formulario de Contacto</h3>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+        
+        <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+    </form>
+</div>
 
-        <!-- Contenido principal -->
-        <main class="content">
-            <section class="contact-section">
-                <h2 class="section-title">Contacto</h2>
-                <p class="section-description">¿Estás interesado en contratar mis servicios o quieres saber más sobre mi trabajo? No dudes en contactarme a través de los siguientes medios:</p>
-                
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <h3>Email</h3>
-                        <span>bilal.elyounossi@email.com</span>
-                        <a href="mailto:bilal.elyounossi@email.com">Enviar email</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <h3>Teléfono</h3>
-                        <span>+34 600 000 000</span>
-                        <a href="tel:+34600000000">Llamar ahora</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h3>Ubicación</h3>
-                        <span>Barcelona, España</span>
-                        <span>Disponible para proyectos remotos</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <h3>LinkedIn</h3>
-                        <span>Perfil profesional</span>
-                        <a href="#" target="_blank">Ver perfil</a>
-                    </div>
-                </div>
+<style>
+.formulario-contacto {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
 
-                <div class="page-nav">
-                    <a href="habilidades.html" class="prev">
-                        <i class="fas fa-arrow-left"></i> Habilidades
-                    </a>
-                    <a href="index.html" class="next">
-                        Página de Inicio <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </section>
-        </main>
+.formulario-contacto h3 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
 
-        <footer>
-            <p>&copy; 2025 BILAL EL YOUNOSSI. Administrador de Sistemas y Redes con especialidad en Ciberseguridad.</p>
-        </footer>
+.form-group {
+    margin-bottom: 15px;
+}
 
-        <script>
-            // Highlight active page
-            document.addEventListener('DOMContentLoaded', function() {
-                const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-                document.querySelectorAll('.nav-links a').forEach(link => {
-                    if (link.getAttribute('href') === currentPage) {
-                        link.classList.add('active');
-                    } else {
-                        link.classList.remove('active');
-                    }
-                });
-            });
-        </script>
-    </body>
-</html>
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+}
+
+.btn-enviar {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #0056b3;
+}
+</style>
