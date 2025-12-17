@@ -1,58 +1,86 @@
-<!-- Añade este código al final de tu contacto.html, antes del cierre de </div> principal y antes del footer -->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Contacto de Bilal El Younossi - Administrador de Sistemas y Redes">
+        <title>Contacto | Bilal El Younossi</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    <body>
+        <!-- Barra de navegación superior -->
+        <header class="topbar">
+            <div class="logo">BILAL EL YOUNOSSI</div>
+            <nav class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="proyectos.html">Proyectos</a>
+                <a href="sobre-mi.html">Sobre mí</a>
+                <a href="habilidades.html">Habilidades</a>
+                <a href="contacto.html" class="active">Contacto</a>
+            </nav>
+        </header>
 
-<div class="contact-section">
-    <h2 class="section-title">Formulario de Contacto</h2>
-    <p style="text-align: center; opacity: 0.9; margin-bottom: 2rem;">Completa el formulario y me pondré en contacto contigo lo antes posible.</p>
-    
-    <form id="formulario-contacto" style="max-width: 800px; margin: 0 auto;">
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
-            <div class="form-group">
-                <label for="nombre" style="display: block; margin-bottom: 0.5rem; color: var(--color-neon-azul); font-weight: bold;">Nombre</label>
-                <input type="text" id="nombre" name="nombre" required
-                    style="width: 100%; padding: 0.8rem; background: rgba(0, 20, 40, 0.4); border: 1px solid rgba(0, 240, 255, 0.3); border-radius: 8px; color: var(--color-texto); font-family: var(--fuente-principal); font-size: 1rem; transition: all 0.3s;">
-            </div>
-            
-            <div class="form-group">
-                <label for="email" style="display: block; margin-bottom: 0.5rem; color: var(--color-neon-azul); font-weight: bold;">Email</label>
-                <input type="email" id="email" name="email" required
-                    style="width: 100%; padding: 0.8rem; background: rgba(0, 20, 40, 0.4); border: 1px solid rgba(0, 240, 255, 0.3); border-radius: 8px; color: var(--color-texto); font-family: var(--fuente-principal); font-size: 1rem; transition: all 0.3s;">
-            </div>
-        </div>
-        
-        <div class="form-group" style="margin-bottom: 1.5rem;">
-            <label for="asunto" style="display: block; margin-bottom: 0.5rem; color: var(--color-neon-azul); font-weight: bold;">Asunto</label>
-            <input type="text" id="asunto" name="asunto" required
-                style="width: 100%; padding: 0.8rem; background: rgba(0, 20, 40, 0.4); border: 1px solid rgba(0, 240, 255, 0.3); border-radius: 8px; color: var(--color-texto); font-family: var(--fuente-principal); font-size: 1rem; transition: all 0.3s;">
-        </div>
-        
-        <div class="form-group" style="margin-bottom: 1.5rem;">
-            <label for="mensaje" style="display: block; margin-bottom: 0.5rem; color: var(--color-neon-azul); font-weight: bold;">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="6" required
-                style="width: 100%; padding: 0.8rem; background: rgba(0, 20, 40, 0.4); border: 1px solid rgba(0, 240, 255, 0.3); border-radius: 8px; color: var(--color-texto); font-family: var(--fuente-principal); font-size: 1rem; line-height: 1.6; resize: vertical; transition: all 0.3s;"></textarea>
-        </div>
-        
-        <div style="text-align: center;">
-            <button type="submit" class="btn" 
-                style="background: transparent; color: var(--color-neon-violeta); border: 1px solid var(--color-neon-violeta); padding: 0.8rem 2rem; font-family: var(--fuente-principal); cursor: pointer; transition: all 0.3s; font-weight: bold;">
-                Enviar Mensaje
-            </button>
-        </div>
-    </form>
-</div>
+        <!-- Contenido principal -->
+        <main class="content">
+            <section class="contact-section">
+                <h2 class="section-title">Contacto</h2>
+                <p class="section-description">¿Estás interesado en contratar mis servicios o quieres saber más sobre mi trabajo? No dudes en contactarme a través de los siguientes medios:</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <span>bilal.elyounossi@email.com</span>
+                        <a href="mailto:bilal.elyounossi@email.com">Enviar email</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Teléfono</h3>
+                        <span>+34 600 000 000</span>
+                        <a href="tel:+34600000000">Llamar ahora</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Ubicación</h3>
+                        <span>Barcelona, España</span>
+                        <span>Disponible para proyectos remotos</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <span>Perfil profesional</span>
+                        <a href="#" target="_blank">Ver perfil</a>
+                    </div>
+                </div>
 
-<script>
-document.getElementById('formulario-contacto').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const nombre = document.getElementById('nombre').value;
-    const email = document.getElementById('email').value;
-    const asunto = document.getElementById('asunto').value;
-    const mensaje = document.getElementById('mensaje').value;
-    
-    // Aquí puedes agregar la lógica para enviar el formulario
-    // Por ahora, mostramos una alerta de ejemplo
-    alert(`¡Gracias ${nombre}! Tu mensaje ha sido enviado correctamente.\nTe responderé pronto a: ${email}`);
-    
-    // Limpiar el formulario
-    this.reset();
-});
-</script>
+                <div class="page-nav">
+                    <a href="habilidades.html" class="prev">
+                        <i class="fas fa-arrow-left"></i> Habilidades
+                    </a>
+                    <a href="index.html" class="next">
+                        Página de Inicio <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 BILAL EL YOUNOSSI. Administrador de Sistemas y Redes con especialidad en Ciberseguridad.</p>
+        </footer>
+
+        <script>
+            // Highlight active page
+            document.addEventListener('DOMContentLoaded', function() {
+                const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    if (link.getAttribute('href') === currentPage) {
+                        link.classList.add('active');
+                    } else {
+                        link.classList.remove('active');
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
