@@ -6,7 +6,45 @@
         <meta name="description" content="Portafolio de Bilal El Younossi - Administrador de Sistemas y Redes con especialidad en Ciberseguridad">
         <title>Bilal El Younossi | Portafolio</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css  ">
+        <style>
+            /* Estilos para la imagen del proyecto */
+            .project-image {
+                width: 100%;
+                height: 200px;
+                overflow: hidden;
+                position: relative;
+                background-color: #f5f5f5;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .project-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+                transition: transform 0.3s ease;
+            }
+
+            .project-image img:hover {
+                transform: scale(1.05);
+            }
+
+            .placeholder {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #e0e0e0;
+                color: #666;
+                font-weight: bold;
+                font-size: 24px;
+            }
+        </style>
     </head>
     <body>
         <!-- Barra de navegación superior -->
@@ -36,13 +74,17 @@
                 
                 <div class="projects-grid">
                     <div class="project-card">
-                        <div class="project-image"><div class="placeholder">DB</div></div>
+                        <div class="project-image">
+                            <img src="BD.jpg" alt="Sistema de Filtraje de Bases de Datos">
+                        </div>
                         <h3>Sistema de Filtraje de Bases de Datos</h3>
                         <p>Implementación de un sistema avanzado de filtrado y monitoreo de bases de datos para detectar accesos no autorizados y actividades sospechosas.</p>
                         <a href="proyecto1.html" class="btn">Ver detalles</a>
                     </div>
                     <div class="project-card">
-                        <div class="project-image"><div class="placeholder">IA</div></div>
+                        <div class="project-image">
+                            <img src="IA.png" alt="Desarrollo de Webs mediante IA">
+                        </div>
                         <h3>Desarrollo de Webs mediante IA</h3>
                         <p>Desarrollo de aplicaciones web utilizando inteligencia artificial para optimizar la administración de servidores y redes.</p>
                         <a href="proyecto2.html" class="btn">Ver detalles</a>
