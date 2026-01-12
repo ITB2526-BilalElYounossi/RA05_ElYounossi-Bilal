@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Sistema de Filtraje de Bases de Datos - Proyecto de Bilal El Younossi">
-        <title>Sistema de Filtraje de Bases de Datos | BILAL EL YOUNOSSI</title>
+        <meta name="description" content="Proyectos de Bilal El Younossi - Administrador de Sistemas y Redes">
+        <title>Proyectos | BILAL EL YOUNOSSI</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css ">
     </head>
     <body>
         <!-- Barra de navegación superior -->
@@ -14,7 +14,7 @@
             <div class="logo">BILAL EL YOUNOSSI</div>
             <nav class="nav-links">
                 <a href="index.html">Inicio</a>
-                <a href="proyectos.html">Proyectos</a>
+                <a href="proyectos.html" class="active">Proyectos</a>
                 <a href="sobre-mi.html">Sobre mí</a>
                 <a href="habilidades.html">Habilidades</a>
                 <a href="contacto.html">Contacto</a>
@@ -23,115 +23,26 @@
 
         <!-- Contenido principal -->
         <main class="content">
-            <!-- Detalles del proyecto 1 -->
-            <section class="project-detail-section">
-                <div class="project-header">
-                    <h1 class="project-title">Sistema de Filtraje de Bases de Datos</h1>
-                    <div class="project-meta">
-                        <span class="project-date"><i class="fas fa-calendar"></i> Enero 2024</span>
-                        <span class="project-category"><i class="fas fa-tag"></i> Ciberseguridad</span>
-                        <span class="project-duration"><i class="fas fa-clock"></i> 3 meses</span>
-                    </div>
+            <!-- Sección de proyectos -->
+            <section class="projects-section">
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <p class="section-description">Estos son mis proyectos más relevantes como administrador de sistemas y redes con especialidad en ciberseguridad</p>
+                
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image"><div class="placeholder">DB</div></div>
+                        <h3>Sistema de Filtraje de Bases de Datos</h3>
+                        <p>Implementación de un sistema avanzado de filtrado y monitoreo de bases de datos para detectar accesos no autorizados y actividades sospechosas. Utilizando scripts en bash personalizados, auditorías de seguridad automatizadas y herramientas de monitorización en tiempo real para proteger la integridad de los datos críticos de la organización.</p>
+                    </article>
                 </div>
 
-                <div class="project-image-main">
-                    <img src="images/database-security.jpg" alt="Sistema de Filtraje de Bases de Datos - Panel de administración completo" loading="lazy">
-                </div>
-
-                <div class="project-content">
-                    <div class="project-overview">
-                        <h2>Resumen del Proyecto</h2>
-                        <p>Desarrollo e implementación de un sistema avanzado de filtrado y monitoreo para bases de datos empresariales, diseñado para proteger información crítica contra accesos no autorizados y actividades maliciosas.</p>
-                    </div>
-
-                    <div class="project-details-grid">
-                        <div class="detail-card">
-                            <h3><i class="fas fa-bullseye"></i> Objetivos</h3>
-                            <ul>
-                                <li>Proteger datos sensibles de accesos no autorizados</li>
-                                <li>Monitoreo en tiempo real de actividades en bases de datos</li>
-                                <li>Detección proactiva de amenazas internas y externas</li>
-                                <li>Generación de reportes automáticos de auditoría</li>
-                            </ul>
-                        </div>
-
-                        <div class="detail-card">
-                            <h3><i class="fas fa-tools"></i> Tecnologías Utilizadas</h3>
-                            <ul>
-                                <li>PostgreSQL + MySQL para bases de datos</li>
-                                <li>Scripts Bash para automatización</li>
-                                <li>Python para análisis de logs</li>
-                                <li>Elastic Stack para monitorización</li>
-                                <li>Docker para contenedores</li>
-                            </ul>
-                        </div>
-
-                        <div class="detail-card">
-                            <h3><i class="fas fa-trophy"></i> Resultados</h3>
-                            <ul>
-                                <li>Reducción del 95% en accesos no autorizados</li>
-                                <li>Detección de 15 amenazas en el primer mes</li>
-                                <li>Tiempo de respuesta reducido de horas a minutos</li>
-                                <li>Cumplimiento total con GDPR y LOPD</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="project-description">
-                        <h2>Descripción Detallada</h2>
-                        <p>El sistema implementado consta de varias capas de seguridad que trabajan en conjunto para proteger la integridad de los datos:</p>
-                        
-                        <h3>1. Filtrado de Accesos</h3>
-                        <p>Implementación de reglas de firewall específicas para cada base de datos, autenticación de dos factores para administradores y control de acceso basado en roles (RBAC).</p>
-                        
-                        <h3>2. Monitorización en Tiempo Real</h3>
-                        <p>Sistema de alertas que notifica instantáneamente sobre actividades sospechosas como consultas masivas, accesos fuera de horario laboral o intentos de acceso desde IPs no autorizadas.</p>
-                        
-                        <h3>3. Auditoría Automatizada</h3>
-                        <p>Generación diaria de reportes de auditoría que detallan todos los accesos, modificaciones y consultas realizadas, con análisis de anomalías mediante machine learning.</p>
-                    </div>
-
-                    <div class="project-challenges">
-                        <h2>Desafíos y Soluciones</h2>
-                        <div class="challenge-item">
-                            <h3>Desafío: Rendimiento vs. Seguridad</h3>
-                            <p>El filtrado exhaustivo podría ralentizar las consultas legítimas.</p>
-                            <p><strong>Solución:</strong> Implementación de caché de consultas frecuentes y optimización de índices, logrando menos del 5% de overhead.</p>
-                        </div>
-                        
-                        <div class="challenge-item">
-                            <h3>Desafío: Falsos Positivos</h3>
-                            <p>El sistema inicial generaba muchas alertas innecesarias.</p>
-                            <p><strong>Solución:</strong> Ajuste de algoritmos de detección con aprendizaje supervisado, reduciendo falsos positivos en un 80%.</p>
-                        </div>
-                    </div>
-
-                    <div class="project-gallery">
-                        <h2>Capturas del Sistema</h2>
-                        <div class="gallery-grid">
-                            <div class="gallery-item">
-                                <img src="images/db-dashboard.jpg" alt="Dashboard de monitorización" loading="lazy">
-                                <p>Panel de control principal</p>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="images/db-alerts.jpg" alt="Sistema de alertas" loading="lazy">
-                                <p>Sistema de alertas en tiempo real</p>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="images/db-reports.jpg" alt="Reportes generados" loading="lazy">
-                                <p>Reportes de auditoría automáticos</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-navigation">
-                        <a href="proyectos.html" class="btn btn-back">
-                            <i class="fas fa-arrow-left"></i> Volver a Proyectos
-                        </a>
-                        <a href="proyecto2.html" class="btn btn-next">
-                            Siguiente Proyecto <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
+                <div class="page-nav">
+                    <a href="index.html" class="prev">
+                        <i class="fas fa-arrow-left"></i> Página de Inicio
+                    </a>
+                    <a href="sobre-mi.html" class="next">
+                        Sobre Mí <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </section>
         </main>
