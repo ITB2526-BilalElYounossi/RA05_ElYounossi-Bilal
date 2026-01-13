@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <style>
-            /* Estilos para la imagen del proyecto */
             .project-image {
                 width: 100%;
                 height: 200px;
@@ -33,37 +32,17 @@
                 transform: scale(1.05);
             }
             
-            /* Asegurar que haya suficiente espacio para 29 proyectos */
             .projects-grid {
                 display: grid;
                 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
                 gap: 30px;
                 margin-top: 40px;
             }
-
-            /* Estilos para cuando la imagen no carga */
-            .project-image img::after {
-                content: attr(alt);
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: #e0e0e0;
-                color: #666;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-weight: bold;
-                font-size: 18px;
-                text-align: center;
-                padding: 20px;
-            }
         </style>
     </head>
     <body>
         <link rel="icon" href="img/computadora-aislada-sobre-fondo-transparente_191095-25426.avif" type="image/png" sizes="32x32">
-        <!-- Barra de navegación superior -->
+        
         <header class="topbar">
             <div class="logo">BILAL EL YOUNOSSI</div>
             <nav class="nav-links">
@@ -75,15 +54,13 @@
             </nav>
         </header>
 
-        <!-- Contenido principal -->
         <main class="content">
-            <!-- Sección de proyectos -->
             <section class="projects-section">
                 <h2 class="section-title">Proyectos Destacados</h2>
                 <p class="section-description">Estos son mis proyectos más relevantes como administrador de sistemas y redes con especialidad en ciberseguridad</p>
                 
                 <div class="projects-grid">
-                    <!-- Proyectos 1 y 2 se mantienen igual -->
+                    <!-- Proyectos 1-29: TODOS CON IMÁGENES LOCALES -->
                     <article class="project-card">
                         <div class="project-image">
                             <img src="img/BD.jpg" alt="Sistema de Filtraje de Bases de Datos">
@@ -98,200 +75,198 @@
                         <h3>Desarrollo de Webs mediante IA</h3>
                         <p>Desarrollo de aplicaciones web utilizando inteligencia artificial para optimizar la administración de servidores y redes. Implementación de chatbots para soporte técnico automatizado y sistemas de detección de anomalías en el tráfico de red mediante algoritmos de machine learning, reduciendo el tiempo de respuesta ante incidentes en un 40%.</p>
                     </article>
-
-                    <!-- Proyectos 3-29: Proyectos ASIR CON IMÁGENES ÚNICAS Y NO REPETIDAS -->
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Servidor Apache">
+                            <img src="img/proyecto3.jpg" alt="Configuración de Servidor Web Apache">
                         </div>
                         <h3>Configuración de Servidor Web Apache</h3>
                         <p>Implementación y configuración de un servidor web Apache con soporte para HTTPS, virtual hosting y módulos de seguridad. Incluye configuración de firewalls, optimización de rendimiento y creación de scripts de backup automatizados.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Active Directory">
+                            <img src="img/proyecto4.jpg" alt="Instalación de Active Directory">
                         </div>
                         <h3>Instalación de Active Directory</h3>
                         <p>Despliegue completo de Active Directory en entorno Windows Server 2022, con políticas de grupo (GPO), administración de usuarios, grupos organizativos y delegación de permisos para una empresa de 200 empleados.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="VPN OpenVPN">
+                            <img src="img/proyecto5.jpg" alt="VPN Site-to-Site con OpenVPN">
                         </div>
                         <h3>VPN Site-to-Site con OpenVPN</h3>
                         <p>Configuración de una red privada virtual entre dos sedes empresariales utilizando OpenVPN, incluyendo autenticación mediante certificados digitales y políticas de acceso basadas en roles.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Monitorización Nagios">
+                            <img src="img/proyecto6.jpg" alt="Monitorización con Nagios">
                         </div>
                         <h3>Monitorización con Nagios</h3>
                         <p>Implementación de un sistema de monitorización empresarial con Nagios Core para supervisar 50+ dispositivos de red, servidores y servicios críticos con notificaciones por email y Telegram.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Virtualización VMware">
+                            <img src="img/proyecto7.jpg" alt="Virtualización con VMware ESXi">
                         </div>
                         <h3>Virtualización con VMware ESXi</h3>
                         <p>Despliegue de infraestructura virtual con VMware ESXi 7.0, gestión de máquinas virtuales, configuración de vSwitch, almacenamiento iSCSI y alta disponibilidad con vSphere HA.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Servidor de Correo">
+                            <img src="img/proyecto8.jpg" alt="Servidor de Correo con Postfix">
                         </div>
                         <h3>Servidor de Correo con Postfix</h3>
                         <p>Implementación de servidor de correo empresarial con Postfix, Dovecot y Roundcube, incluyendo protección anti-spam con SpamAssassin y políticas de seguridad DKIM/DMARC.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Backup Bacula">
+                            <img src="img/proyecto9.jpg" alt="Backup Automatizado con Bacula">
                         </div>
                         <h3>Backup Automatizado con Bacula</h3>
                         <p>Configuración de sistema de backup completo con Bacula para backup diferencial e incremental de servidores Linux/Windows con retención de 90 días y verificación de integridad.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Firewall pfSense">
+                            <img src="img/proyecto10.jpg" alt="Firewall con pfSense">
                         </div>
                         <h3>Firewall con pfSense</h3>
                         <p>Implementación de firewall empresarial con pfSense, incluyendo reglas NAT, VPN IPSec, filtrado de contenido, control de ancho de banda y detección de intrusos con Snort.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1620740188601-48e5c8e6e641?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Docker">
+                            <img src="img/proyecto11.jpg" alt="Docker para Entornos de Desarrollo">
                         </div>
                         <h3>Docker para Entornos de Desarrollo</h3>
                         <p>Creación de entorno de contenedores Docker para desarrollo y producción, orquestación con Docker Compose, y despliegue de aplicaciones web en contenedores aislados.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Servidor de Archivos">
+                            <img src="img/proyecto12.jpg" alt="Servidor de Archivos Samba">
                         </div>
                         <h3>Servidor de Archivos Samba</h3>
                         <p>Configuración de servidor de archivos Samba con integración a Active Directory, cuotas de disco, permisos NTFS y replicación para alta disponibilidad.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Análisis de Red">
+                            <img src="img/proyecto13.jpg" alt="Análisis de Tráfico con Wireshark">
                         </div>
                         <h3>Análisis de Tráfico con Wireshark</h3>
                         <p>Proyecto de análisis forense de red utilizando Wireshark para detectar anomalías, problemas de rendimiento y posibles amenazas de seguridad en el tráfico de red.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Autenticación LDAP">
+                            <img src="img/proyecto14.jpg" alt="LDAP para Autenticación Centralizada">
                         </div>
                         <h3>LDAP para Autenticación Centralizada</h3>
                         <p>Implementación de servidor OpenLDAP para autenticación unificada en servicios Linux, integración con aplicaciones web y sincronización con Active Directory.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Scripting Bash">
+                            <img src="img/proyecto15.jpg" alt="Scripting de Administración en Bash">
                         </div>
                         <h3>Scripting de Administración en Bash</h3>
                         <p>Desarrollo de 20+ scripts Bash para automatización de tareas administrativas: limpieza de logs, monitorización de recursos, backup y reportes automáticos.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Servidor DNS">
+                            <img src="img/proyecto16.jpg" alt="Servidor DNS con BIND9">
                         </div>
                         <h3>Servidor DNS con BIND9</h3>
                         <p>Configuración de servidor DNS autoritativo y caché con BIND9, incluyendo zonas DNS, registros DNSSEC y protección contra ataques DDoS.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1518432031355-dbc32eee2f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Virtualización KVM">
+                            <img src="img/proyecto17.jpg" alt="KVM para Virtualización en Linux">
                         </div>
                         <h3>KVM para Virtualización en Linux</h3>
                         <p>Implementación de plataforma de virtualización con KVM/QEMU, gestión mediante virt-manager, redes puente y migración en caliente de máquinas virtuales.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="WordPress">
+                            <img src="img/proyecto18.jpg" alt="WordPress con Stack LAMP">
                         </div>
                         <h3>WordPress con Stack LAMP</h3>
                         <p>Despliegue optimizado de WordPress con stack LAMP (Linux, Apache, MySQL, PHP), caching con Varnish, CDN y medidas de seguridad hardening.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1623479322729-28b25c16b011?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Automatización Ansible">
+                            <img src="img/proyecto19.jpg" alt="Ansible para Automatización">
                         </div>
                         <h3>Ansible para Automatización</h3>
                         <p>Automatización del despliegue y configuración de 30+ servidores usando Ansible, playbooks para hardening y gestión de configuración como código.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Proxy Squid">
+                            <img src="img/proyecto20.jpg" alt="Proxy Squid con Filtrado de Contenido">
                         </div>
                         <h3>Proxy Squid con Filtrado de Contenido</h3>
                         <p>Configuración de proxy Squid con autenticación, filtrado de contenido por categorías, control de ancho de banda y logs detallados de navegación.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1629654291660-3c98113a0437?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="RAID y LVM">
+                            <img src="img/proyecto21.jpg" alt="RAID y LVM en Servidores">
                         </div>
                         <h3>RAID y LVM en Servidores</h3>
                         <p>Implementación de RAID 10 para redundancia y rendimiento, combinado con LVM para gestión flexible de particiones en servidores de producción.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="MySQL Replicación">
+                            <img src="img/proyecto22.jpg" alt="MySQL con Replicación Master-Slave">
                         </div>
                         <h3>MySQL con Replicación Master-Slave</h3>
                         <p>Configuración de base de datos MySQL con replicación para alta disponibilidad, monitorización con MySQL Workbench y estrategias de backup.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="NFS">
+                            <img src="img/proyecto23.jpg" alt="NFS para Compartición de Archivos">
                         </div>
                         <h3>NFS para Compartición de Archivos</h3>
                         <p>Implementación de servidor NFSv4 con autenticación Kerberos, cuotas de disco y montaje automático en clientes Linux.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Gestor de Incidencias">
+                            <img src="img/proyecto24.jpg" alt="Gestor de Incidencias con GLPI">
                         </div>
                         <h3>Gestor de Incidencias con GLPI</h3>
                         <p>Despliegue de sistema de ticketing GLPI para gestión de incidencias TI, inventario de hardware/software y base de conocimiento.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Syslog Graylog">
+                            <img src="img/proyecto25.jpg" alt="Syslog Centralizado con Graylog">
                         </div>
                         <h3>Syslog Centralizado con Graylog</h3>
                         <p>Configuración de servidor centralizado de logs con Graylog para correlación de eventos, alertas y cumplimiento normativo de seguridad.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=70" alt="Nextcloud">
+                            <img src="img/proyecto26.jpg" alt="Nextcloud para Colaboración">
                         </div>
                         <h3>Nextcloud para Colaboración</h3>
                         <p>Implementación de plataforma Nextcloud con almacenamiento seguro, calendario compartido, videollamadas y sincronización de archivos.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=70" alt="Auditoría de Seguridad">
+                            <img src="img/proyecto27.jpg" alt="Auditoría de Seguridad con Lynis">
                         </div>
                         <h3>Auditoría de Seguridad con Lynis</h3>
                         <p>Realización de auditorías de seguridad en servidores Linux usando Lynis, hardening del sistema y generación de informes de cumplimiento.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1620740188601-48e5c8e6e641?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=70" alt="Monitorización Zabbix">
+                            <img src="img/proyecto28.jpg" alt="Zabbix para Monitorización Avanzada">
                         </div>
                         <h3>Zabbix para Monitorización Avanzada</h3>
                         <p>Configuración de Zabbix para monitorización proactiva con triggers personalizados, mapas de red y dashboards para gestión de infraestructura.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=70" alt="Protección Fail2ban">
+                            <img src="img/proyecto29.jpg" alt="Fail2ban para Protección de Servicios">
                         </div>
                         <h3>Fail2ban para Protección de Servicios</h3>
                         <p>Implementación de Fail2ban para protección contra ataques de fuerza bruta en SSH, FTP y servicios web con reglas personalizadas.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1518432031355-dbc32eee2f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=70" alt="Terraform">
+                            <img src="img/proyecto30.jpg" alt="Infraestructura como Código con Terraform">
                         </div>
                         <h3>Infraestructura como Código con Terraform</h3>
                         <p>Automatización del despliegue de infraestructura cloud con Terraform en AWS, creación de VPC, instancias EC2, balanceadores de carga y políticas de seguridad automatizadas.</p>
