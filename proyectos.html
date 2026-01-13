@@ -44,6 +44,14 @@
                 font-weight: bold;
                 font-size: 24px;
             }
+            
+            /* Asegurar que haya suficiente espacio para 29 proyectos */
+            .projects-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 30px;
+                margin-top: 40px;
+            }
         </style>
     </head>
     <body>
@@ -84,7 +92,7 @@
                         <p>Desarrollo de aplicaciones web utilizando inteligencia artificial para optimizar la administración de servidores y redes. Implementación de chatbots para soporte técnico automatizado y sistemas de detección de anomalías en el tráfico de red mediante algoritmos de machine learning, reduciendo el tiempo de respuesta ante incidentes en un 40%.</p>
                     </article>
 
-                    <!-- Proyectos 3-28: Proyectos ASIR -->
+                    <!-- Proyectos 3-29: Proyectos ASIR -->
                     <article class="project-card">
                         <div class="project-image">
                             <div class="placeholder">ASIR</div>
@@ -273,6 +281,13 @@
                         </div>
                         <h3>Fail2ban para Protección de Servicios</h3>
                         <p>Implementación de Fail2ban para protección contra ataques de fuerza bruta en SSH, FTP y servicios web con reglas personalizadas.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="placeholder">ASIR</div>
+                        </div>
+                        <h3>Infraestructura como Código con Terraform</h3>
+                        <p>Automatización del despliegue de infraestructura cloud con Terraform en AWS, creación de VPC, instancias EC2, balanceadores de carga y políticas de seguridad automatizadas.</p>
                     </article>
                 </div>
 
