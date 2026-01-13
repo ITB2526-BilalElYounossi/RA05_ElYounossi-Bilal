@@ -3,17 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Portafolio de Bilal El Younossi - Administrador de Sistemas y Redes con especialidad en Ciberseguridad">
-        <title>Bilal El Younossi | Portafolio</title>
-        
-        
-        <link rel="icon" href="img/logo.avif
-" type="image/png" sizes="32x32">
-        
+        <meta name="description" content="Proyectos de Bilal El Younossi - Administrador de Sistemas y Redes">
+        <title>Proyectos | Bilal El Younossi</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css     ">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <style>
-            /* Estilos para la imagen del proyecto */
             .project-image {
                 width: 100%;
                 height: 200px;
@@ -37,88 +31,238 @@
             .project-image img:hover {
                 transform: scale(1.05);
             }
-
-            .placeholder {
-                width: 100%;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: #e0e0e0;
-                color: #666;
-                font-weight: bold;
-                font-size: 24px;
+            
+            .projects-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 30px;
+                margin-top: 40px;
             }
         </style>
     </head>
-    <!-- Barra de navegación superior -->
-<header class="topbar">
-    <div class="logo-container">
-        <a href="index.html">
-            <img src="img/logo.avif" alt="Logo" class="logo">
-        </a>
-        <h1 class="logo-text"> <a href="index.html">BILAL EL YOUNOSSI</a></h1>
-    </div>
-    <nav class="nav-links">
-        <a href="index.html">Inicio</a>
-        <a href="proyectos.html" class="active">Proyectos</a>
-        <a href="sobre-mi.html">Sobre mí</a>
-        <a href="habilidades.html">Habilidades</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
-</header>
+    <body>
+        <link rel="icon" href="img/computadora-aislada-sobre-fondo-transparente_191095-25426.avif" type="image/png" sizes="32x32">
+        
+        <header class="topbar">
+            <div class="logo">BILAL EL YOUNOSSI</div>
+            <nav class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="proyectos.html" class="active">Proyectos</a>
+                <a href="sobre-mi.html">Sobre mí</a>
+                <a href="habilidades.html">Habilidades</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </header>
 
-        <!-- Contenido principal -->
         <main class="content">
-            <!-- Sección hero -->
-            <section class="hero">
-                <h1>Administrador de Sistemas y Redes</h1>
-                <p>Especialista en Ciberseguridad y Gestión de Infraestructuras Tecnológicas</p>
-            </section>
-
-            <!-- Resumen de contenido -->
-            <section class="welcome-section">
-                <h2 class="section-title">Bienvenido a mi portafolio</h2>
-                <p class="section-description">Este portafolio muestra mi experiencia y habilidades como administrador de sistemas y redes con especialidad en ciberseguridad. Aquí encontrarás información sobre mis proyectos, habilidades técnicas y cómo puedes contactarme.</p>
+            <section class="projects-section">
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <p class="section-description">Estos son mis proyectos más relevantes como administrador de sistemas y redes con especialidad en ciberseguridad</p>
                 
                 <div class="projects-grid">
-                    <div class="project-card">
+                    <!-- Proyectos 1-27: TODOS CON IMÁGENES LOCALES -->
+                    <article class="project-card">
                         <div class="project-image">
                             <img src="img/proyecto1.png" alt="Sistema de Filtraje de Bases de Datos">
                         </div>
                         <h3>Sistema de Filtraje de Bases de Datos</h3>
-                        <p>Implementación de un sistema avanzado de filtrado y monitoreo de bases de datos para detectar accesos no autorizados y actividades sospechosas.</p>
-                        <a href="proyecto1.html" class="btn">Ver detalles</a>
-                    </div>
-                    <div class="project-card">
+                        <p>Implementación de un sistema avanzado de filtrado y monitoreo de bases de datos para detectar accesos no autorizados y actividades sospechosas. Utilizando scripts en bash personalizados, auditorías de seguridad automatizadas y herramientas de monitorización en tiempo real para proteger la integridad de los datos críticos de la organización.</p>
+                    </article>
+                    <article class="project-card">
                         <div class="project-image">
                             <img src="img/proyecto2.png" alt="Desarrollo de Webs mediante IA">
                         </div>
                         <h3>Desarrollo de Webs mediante IA</h3>
-                        <p>Desarrollo de aplicaciones web utilizando inteligencia artificial para optimizar la administración de servidores y redes.</p>
-                        <a href="proyecto2.html" class="btn">Ver detalles</a>
-                    </div>
+                        <p>Desarrollo de aplicaciones web utilizando inteligencia artificial para optimizar la administración de servidores y redes. Implementación de chatbots para soporte técnico automatizado y sistemas de detección de anomalías en el tráfico de red mediante algoritmos de machine learning, reduciendo el tiempo de respuesta ante incidentes en un 40%.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto3.png" alt="Configuración de Servidor Web Apache">
+                        </div>
+                        <h3>Configuración de Servidor Web Apache</h3>
+                        <p>Implementación y configuración de un servidor web Apache con soporte para HTTPS, virtual hosting y módulos de seguridad. Incluye configuración de firewalls, optimización de rendimiento y creación de scripts de backup automatizados.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto4.png" alt="Instalación de Active Directory">
+                        </div>
+                        <h3>Instalación de Active Directory</h3>
+                        <p>Despliegue completo de Active Directory en entorno Windows Server 2022, con políticas de grupo (GPO), administración de usuarios, grupos organizativos y delegación de permisos para una empresa de 200 empleados.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto5.png" alt="VPN Site-to-Site con OpenVPN">
+                        </div>
+                        <h3>VPN Site-to-Site con OpenVPN</h3>
+                        <p>Configuración de una red privada virtual entre dos sedes empresariales utilizando OpenVPN, incluyendo autenticación mediante certificados digitales y políticas de acceso basadas en roles.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto6.png" alt="Monitorización con Nagios">
+                        </div>
+                        <h3>Monitorización con Nagios</h3>
+                        <p>Implementación de un sistema de monitorización empresarial con Nagios Core para supervisar 50+ dispositivos de red, servidores y servicios críticos con notificaciones por email y Telegram.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto7.png" alt="Virtualización con VMware ESXi">
+                        </div>
+                        <h3>Virtualización con VMware ESXi</h3>
+                        <p>Despliegue de infraestructura virtual con VMware ESXi 7.0, gestión de máquinas virtuales, configuración de vSwitch, almacenamiento iSCSI y alta disponibilidad con vSphere HA.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto8.png" alt="Servidor de Correo con Postfix">
+                        </div>
+                        <h3>Servidor de Correo con Postfix</h3>
+                        <p>Implementación de servidor de correo empresarial con Postfix, Dovecot y Roundcube, incluyendo protección anti-spam con SpamAssassin y políticas de seguridad DKIM/DMARC.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto9.png" alt="Backup Automatizado con Bacula">
+                        </div>
+                        <h3>Backup Automatizado con Bacula</h3>
+                        <p>Configuración de sistema de backup completo con Bacula para backup diferencial e incremental de servidores Linux/Windows con retención de 90 días y verificación de integridad.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto10.png" alt="Firewall con pfSense">
+                        </div>
+                        <h3>Firewall con pfSense</h3>
+                        <p>Implementación de firewall empresarial con pfSense, incluyendo reglas NAT, VPN IPSec, filtrado de contenido, control de ancho de banda y detección de intrusos con Snort.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto11.png" alt="Docker para Entornos de Desarrollo">
+                        </div>
+                        <h3>Docker para Entornos de Desarrollo</h3>
+                        <p>Creación de entorno de contenedores Docker para desarrollo y producción, orquestación con Docker Compose, y despliegue de aplicaciones web en contenedores aislados.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto12.png" alt="Servidor de Archivos Samba">
+                        </div>
+                        <h3>Servidor de Archivos Samba</h3>
+                        <p>Configuración de servidor de archivos Samba con integración a Active Directory, cuotas de disco, permisos NTFS y replicación para alta disponibilidad.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto13.png" alt="Análisis de Tráfico con Wireshark">
+                        </div>
+                        <h3>Análisis de Tráfico con Wireshark</h3>
+                        <p>Proyecto de análisis forense de red utilizando Wireshark para detectar anomalías, problemas de rendimiento y posibles amenazas de seguridad en el tráfico de red.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto14.png" alt="LDAP para Autenticación Centralizada">
+                        </div>
+                        <h3>LDAP para Autenticación Centralizada</h3>
+                        <p>Implementación de servidor OpenLDAP para autenticación unificada en servicios Linux, integración con aplicaciones web y sincronización con Active Directory.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto15.png" alt="Scripting de Administración en Bash">
+                        </div>
+                        <h3>Scripting de Administración en Bash</h3>
+                        <p>Desarrollo de 20+ scripts Bash para automatización de tareas administrativas: limpieza de logs, monitorización de recursos, backup y reportes automáticos.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto16.png" alt="Servidor DNS con BIND9">
+                        </div>
+                        <h3>Servidor DNS con BIND9</h3>
+                        <p>Configuración de servidor DNS autoritativo y caché con BIND9, incluyendo zonas DNS, registros DNSSEC y protección contra ataques DDoS.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto17.png" alt="KVM para Virtualización en Linux">
+                        </div>
+                        <h3>KVM para Virtualización en Linux</h3>
+                        <p>Implementación de plataforma de virtualización con KVM/QEMU, gestión mediante virt-manager, redes puente y migración en caliente de máquinas virtuales.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto18.png" alt="WordPress con Stack LAMP">
+                        </div>
+                        <h3>WordPress con Stack LAMP</h3>
+                        <p>Despliegue optimizado de WordPress con stack LAMP (Linux, Apache, MySQL, PHP), caching con Varnish, CDN y medidas de seguridad hardening.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto19.png" alt="Ansible para Automatización">
+                        </div>
+                        <h3>Ansible para Automatización</h3>
+                        <p>Automatización del despliegue y configuración de 30+ servidores usando Ansible, playbooks para hardening y gestión de configuración como código.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto20.png" alt="Proxy Squid con Filtrado de Contenido">
+                        </div>
+                        <h3>Proxy Squid con Filtrado de Contenido</h3>
+                        <p>Configuración de proxy Squid con autenticación, filtrado de contenido por categorías, control de ancho de banda y logs detallados de navegación.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto21.png" alt="RAID y LVM en Servidores">
+                        </div>
+                        <h3>RAID y LVM en Servidores</h3>
+                        <p>Implementación de RAID 10 para redundancia y rendimiento, combinado con LVM para gestión flexible de particiones en servidores de producción.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto22.png" alt="MySQL con Replicación Master-Slave">
+                        </div>
+                        <h3>MySQL con Replicación Master-Slave</h3>
+                        <p>Configuración de base de datos MySQL con replicación para alta disponibilidad, monitorización con MySQL Workbench y estrategias de backup.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto23.png" alt="NFS para Compartición de Archivos">
+                        </div>
+                        <h3>NFS para Compartición de Archivos</h3>
+                        <p>Implementación de servidor NFSv4 con autenticación Kerberos, cuotas de disco y montaje automático en clientes Linux.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto24.png" alt="Gestor de Incidencias con GLPI">
+                        </div>
+                        <h3>Gestor de Incidencias con GLPI</h3>
+                        <p>Despliegue de sistema de ticketing GLPI para gestión de incidencias TI, inventario de hardware/software y base de conocimiento.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto25.png" alt="Syslog Centralizado con Graylog">
+                        </div>
+                        <h3>Syslog Centralizado con Graylog</h3>
+                        <p>Configuración de servidor centralizado de logs con Graylog para correlación de eventos, alertas y cumplimiento normativo de seguridad.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto26.png" alt="Nextcloud para Colaboración">
+                        </div>
+                        <h3>Nextcloud para Colaboración</h3>
+                        <p>Implementación de plataforma Nextcloud con almacenamiento seguro, calendario compartido, videollamadas y sincronización de archivos.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto27.png" alt="Auditoría de Seguridad con Lynis">
+                        </div>
+                        <h3>Auditoría de Seguridad con Lynis</h3>
+                        <p>Realización de auditorías de seguridad en servidores Linux usando Lynis, hardening del sistema y generación de informes de cumplimiento.</p>
+                    </article>
+                    <!-- SE ELIMINARON LOS PROYECTOS 28, 29 y 30 -->
+                </div>
+
+                <div class="page-nav">
+                    <a href="index.html" class="prev">
+                        <i class="fas fa-arrow-left"></i> Página de Inicio
+                    </a>
+                    <a href="sobre-mi.html" class="next">
+                        Sobre Mí <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </section>
         </main>
-     <!-- Resumen de contenido -->
-            <section class="welcome-section">
-                <h2 class="section-title">Bienvenido a mi portafolio</h2>
-                <p class="section-description">Este portafolio refleja mi trayectoria y competencias como administrador de sistemas y redes, con especialización en ciberseguridad. Aquí podrás explorar mis proyectos, habilidades técnicas y cómo contactarme.</p>
-               
-            </section>
-            <!-- Sección de proyectos -->
-            <section class="projects-section">
-                <h2 class="section-title">Proyectos Destacados</h2>
-                <p class="section-description">Estos son mis proyectos más relevantes como administrador de sistemas y redes con especialidad en ciberseguridad</p>
-           
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <div class="project-image"><div class="placeholder">
-
-Mis proyectos html:
-            <section class="projects-section">
-                <h2 class="section-title">Mis proyectos</h2>
 
         <footer>
             <p>&copy; 2025 BILAL EL YOUNOSSI. Administrador de Sistemas y Redes con especialidad en Ciberseguridad.</p>
@@ -139,22 +283,4 @@ Mis proyectos html:
         </script>
         <script src="main.js"></script>
     </body>
-</html>proyecto destacados:
- <!-- Resumen de contenido -->
-            <section class="welcome-section">
-                <h2 class="section-title">Bienvenido a mi portafolio</h2>
-                <p class="section-description">Este portafolio refleja mi trayectoria y competencias como administrador de sistemas y redes, con especialización en ciberseguridad. Aquí podrás explorar mis proyectos, habilidades técnicas y cómo contactarme.</p>
-               
-            </section>
-            <!-- Sección de proyectos -->
-            <section class="projects-section">
-                <h2 class="section-title">Proyectos Destacados</h2>
-                <p class="section-description">Estos son mis proyectos más relevantes como administrador de sistemas y redes con especialidad en ciberseguridad</p>
-           
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <div class="project-image"><div class="placeholder">
-
-Mis proyectos html:
-            <section class="projects-section">
-                <h2 class="section-title">Mis proyectos</h2>
+</html>
