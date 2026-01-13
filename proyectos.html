@@ -42,7 +42,22 @@
                 background-color: #e0e0e0;
                 color: #666;
                 font-weight: bold;
+                font-size: 18px;
+                text-align: center;
+                padding: 10px;
+                flex-direction: column;
+            }
+
+            .placeholder i {
+                font-size: 36px;
+                margin-bottom: 10px;
+                color: #888;
+            }
+
+            .placeholder-text {
                 font-size: 24px;
+                font-weight: bold;
+                color: #666;
             }
             
             /* Asegurar que haya suficiente espacio para 29 proyectos */
@@ -51,6 +66,21 @@
                 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
                 gap: 30px;
                 margin-top: 40px;
+            }
+
+            /* Añadir más contraste a los placeholders */
+            .project-image .placeholder {
+                background: linear-gradient(135deg, #e0e0e0 0%, #f0f0f0 100%);
+                border: 2px solid #ddd;
+            }
+
+            .project-image .placeholder .placeholder-text {
+                color: #555;
+                text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+            }
+
+            .project-image .placeholder i {
+                color: #777;
             }
         </style>
     </head>
@@ -92,205 +122,283 @@
                         <p>Desarrollo de aplicaciones web utilizando inteligencia artificial para optimizar la administración de servidores y redes. Implementación de chatbots para soporte técnico automatizado y sistemas de detección de anomalías en el tráfico de red mediante algoritmos de machine learning, reduciendo el tiempo de respuesta ante incidentes en un 40%.</p>
                     </article>
 
-                    <!-- Proyectos 3-29: Proyectos ASIR -->
+                    <!-- Proyectos 3-29: Proyectos ASIR CON IMÁGENES MEJOR CONFIGURADAS -->
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="img/Ap.png" alt="Configuración de Servidor Web Apache">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fas fa-server"></i>
+                                <span class="placeholder-text">Apache</span>
+                            </div>
                         </div>
                         <h3>Configuración de Servidor Web Apache</h3>
                         <p>Implementación y configuración de un servidor web Apache con soporte para HTTPS, virtual hosting y módulos de seguridad. Incluye configuración de firewalls, optimización de rendimiento y creación de scripts de backup automatizados.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="img/Ad.png" alt="Instalación de Active Directory">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fas fa-user-shield"></i>
+                                <span class="placeholder-text">Active Directory</span>
+                            </div>
                         </div>
                         <h3>Instalación de Active Directory</h3>
                         <p>Despliegue completo de Active Directory en entorno Windows Server 2022, con políticas de grupo (GPO), administración de usuarios, grupos organizativos y delegación de permisos para una empresa de 200 empleados.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="img/VPN.png" alt="PN Site-to-Site con OpenVPN">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fas fa-network-wired"></i>
+                                <span class="placeholder-text">VPN</span>
+                            </div>
                         </div>
                         <h3>VPN Site-to-Site con OpenVPN</h3>
                         <p>Configuración de una red privada virtual entre dos sedes empresariales utilizando OpenVPN, incluyendo autenticación mediante certificados digitales y políticas de acceso basadas en roles.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="img/nagios.png" alt="Monitorización con Nagios">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fas fa-chart-line"></i>
+                                <span class="placeholder-text">Nagios</span>
+                            </div>
                         </div>
                         <h3>Monitorización con Nagios</h3>
                         <p>Implementación de un sistema de monitorización empresarial con Nagios Core para supervisar 50+ dispositivos de red, servidores y servicios críticos con notificaciones por email y Telegram.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="img/vesi.png" alt="Virtualización con VMware ESXi">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fas fa-cloud"></i>
+                                <span class="placeholder-text">VMware</span>
+                            </div>
                         </div>
                         <h3>Virtualización con VMware ESXi</h3>
                         <p>Despliegue de infraestructura virtual con VMware ESXi 7.0, gestión de máquinas virtuales, configuración de vSwitch, almacenamiento iSCSI y alta disponibilidad con vSphere HA.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="img/SCP.png" alt="Servidor de Correo con Postfix">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fas fa-envelope"></i>
+                                <span class="placeholder-text">Postfix</span>
+                            </div>
                         </div>
                         <h3>Servidor de Correo con Postfix</h3>
                         <p>Implementación de servidor de correo empresarial con Postfix, Dovecot y Roundcube, incluyendo protección anti-spam con SpamAssassin y políticas de seguridad DKIM/DMARC.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fas fa-hdd"></i>
+                                <span class="placeholder-text">Bacula</span>
+                            </div>
                         </div>
                         <h3>Backup Automatizado con Bacula</h3>
                         <p>Configuración de sistema de backup completo con Bacula para backup diferencial e incremental de servidores Linux/Windows con retención de 90 días y verificación de integridad.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fas fa-shield-alt"></i>
+                                <span class="placeholder-text">pfSense</span>
+                            </div>
                         </div>
                         <h3>Firewall con pfSense</h3>
                         <p>Implementación de firewall empresarial con pfSense, incluyendo reglas NAT, VPN IPSec, filtrado de contenido, control de ancho de banda y detección de intrusos con Snort.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fab fa-docker"></i>
+                                <span class="placeholder-text">Docker</span>
+                            </div>
                         </div>
                         <h3>Docker para Entornos de Desarrollo</h3>
                         <p>Creación de entorno de contenedores Docker para desarrollo y producción, orquestación con Docker Compose, y despliegue de aplicaciones web en contenedores aislados.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fas fa-folder-open"></i>
+                                <span class="placeholder-text">Samba</span>
+                            </div>
                         </div>
                         <h3>Servidor de Archivos Samba</h3>
                         <p>Configuración de servidor de archivos Samba con integración a Active Directory, cuotas de disco, permisos NTFS y replicación para alta disponibilidad.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fas fa-search"></i>
+                                <span class="placeholder-text">Wireshark</span>
+                            </div>
                         </div>
                         <h3>Análisis de Tráfico con Wireshark</h3>
                         <p>Proyecto de análisis forense de red utilizando Wireshark para detectar anomalías, problemas de rendimiento y posibles amenazas de seguridad en el tráfico de red.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fas fa-key"></i>
+                                <span class="placeholder-text">LDAP</span>
+                            </div>
                         </div>
                         <h3>LDAP para Autenticación Centralizada</h3>
                         <p>Implementación de servidor OpenLDAP para autenticación unificada en servicios Linux, integración con aplicaciones web y sincronización con Active Directory.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fas fa-terminal"></i>
+                                <span class="placeholder-text">Bash</span>
+                            </div>
                         </div>
                         <h3>Scripting de Administración en Bash</h3>
                         <p>Desarrollo de 20+ scripts Bash para automatización de tareas administrativas: limpieza de logs, monitorización de recursos, backup y reportes automáticos.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fas fa-globe"></i>
+                                <span class="placeholder-text">DNS</span>
+                            </div>
                         </div>
                         <h3>Servidor DNS con BIND9</h3>
                         <p>Configuración de servidor DNS autoritativo y caché con BIND9, incluyendo zonas DNS, registros DNSSEC y protección contra ataques DDoS.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fas fa-cube"></i>
+                                <span class="placeholder-text">KVM</span>
+                            </div>
                         </div>
                         <h3>KVM para Virtualización en Linux</h3>
                         <p>Implementación de plataforma de virtualización con KVM/QEMU, gestión mediante virt-manager, redes puente y migración en caliente de máquinas virtuales.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fab fa-wordpress"></i>
+                                <span class="placeholder-text">WordPress</span>
+                            </div>
                         </div>
                         <h3>WordPress con Stack LAMP</h3>
                         <p>Despliegue optimizado de WordPress con stack LAMP (Linux, Apache, MySQL, PHP), caching con Varnish, CDN y medidas de seguridad hardening.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fas fa-robot"></i>
+                                <span class="placeholder-text">Ansible</span>
+                            </div>
                         </div>
                         <h3>Ansible para Automatización</h3>
                         <p>Automatización del despliegue y configuración de 30+ servidores usando Ansible, playbooks para hardening y gestión de configuración como código.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fas fa-filter"></i>
+                                <span class="placeholder-text">Squid</span>
+                            </div>
                         </div>
                         <h3>Proxy Squid con Filtrado de Contenido</h3>
                         <p>Configuración de proxy Squid con autenticación, filtrado de contenido por categorías, control de ancho de banda y logs detallados de navegación.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fas fa-hdd"></i>
+                                <span class="placeholder-text">RAID</span>
+                            </div>
                         </div>
                         <h3>RAID y LVM en Servidores</h3>
                         <p>Implementación de RAID 10 para redundancia y rendimiento, combinado con LVM para gestión flexible de particiones en servidores de producción.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fas fa-database"></i>
+                                <span class="placeholder-text">MySQL</span>
+                            </div>
                         </div>
                         <h3>MySQL con Replicación Master-Slave</h3>
                         <p>Configuración de base de datos MySQL con replicación para alta disponibilidad, monitorización con MySQL Workbench y estrategias de backup.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fas fa-share-alt"></i>
+                                <span class="placeholder-text">NFS</span>
+                            </div>
                         </div>
                         <h3>NFS para Compartición de Archivos</h3>
                         <p>Implementación de servidor NFSv4 con autenticación Kerberos, cuotas de disco y montaje automático en clientes Linux.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fas fa-ticket-alt"></i>
+                                <span class="placeholder-text">GLPI</span>
+                            </div>
                         </div>
                         <h3>Gestor de Incidencias con GLPI</h3>
                         <p>Despliegue de sistema de ticketing GLPI para gestión de incidencias TI, inventario de hardware/software y base de conocimiento.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fas fa-clipboard-list"></i>
+                                <span class="placeholder-text">Graylog</span>
+                            </div>
                         </div>
                         <h3>Syslog Centralizado con Graylog</h3>
                         <p>Configuración de servidor centralizado de logs con Graylog para correlación de eventos, alertas y cumplimiento normativo de seguridad.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <span class="placeholder-text">Nextcloud</span>
+                            </div>
                         </div>
                         <h3>Nextcloud para Colaboración</h3>
                         <p>Implementación de plataforma Nextcloud con almacenamiento seguro, calendario compartido, videollamadas y sincronización de archivos.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fas fa-user-secret"></i>
+                                <span class="placeholder-text">Lynis</span>
+                            </div>
                         </div>
                         <h3>Auditoría de Seguridad con Lynis</h3>
                         <p>Realización de auditorías de seguridad en servidores Linux usando Lynis, hardening del sistema y generación de informes de cumplimiento.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span class="placeholder-text">Zabbix</span>
+                            </div>
                         </div>
                         <h3>Zabbix para Monitorización Avanzada</h3>
                         <p>Configuración de Zabbix para monitorización proactiva con triggers personalizados, mapas de red y dashboards para gestión de infraestructura.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fas fa-ban"></i>
+                                <span class="placeholder-text">Fail2ban</span>
+                            </div>
                         </div>
                         <h3>Fail2ban para Protección de Servicios</h3>
                         <p>Implementación de Fail2ban para protección contra ataques de fuerza bruta en SSH, FTP y servicios web con reglas personalizadas.</p>
                     </article>
                     <article class="project-card">
                         <div class="project-image">
-                            <div class="placeholder">ASIR</div>
+                            <div class="placeholder">
+                                <i class="fas fa-code"></i>
+                                <span class="placeholder-text">Terraform</span>
+                            </div>
                         </div>
                         <h3>Infraestructura como Código con Terraform</h3>
                         <p>Automatización del despliegue de infraestructura cloud con Terraform en AWS, creación de VPC, instancias EC2, balanceadores de carga y políticas de seguridad automatizadas.</p>
