@@ -1,57 +1,16 @@
-<!DOCTYPE html>
 <html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Proyectos de Bilal El Younossi - Administrador de Sistemas y Redes">
-        <title>Proyectos | Bilal El Younossi</title>
+        <meta name="description" content="Proyectos de Trishan Mizhquiri Valencia - Administrador de Sistemas y Redes">
+        <title>Proyectos | Trishan Mizhquiri Valencia</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css  ">
-        <style>
-            /* Estilos para la imagen del proyecto */
-            .project-image {
-                width: 100%;
-                height: 200px;
-                overflow: hidden;
-                position: relative;
-                background-color: #f5f5f5;
-                border-radius: 8px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .project-image img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                display: block;
-                transition: transform 0.3s ease;
-            }
-
-            .project-image img:hover {
-                transform: scale(1.05);
-            }
-
-            .placeholder {
-                width: 100%;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: #e0e0e0;
-                color: #666;
-                font-weight: bold;
-                font-size: 24px;
-            }
-        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </head>
     <body>
-        <link rel="icon" href="img/computadora-aislada-sobre-fondo-transparente_191095-25426.avif
-" type="image/png" sizes="32x32">
         <!-- Barra de navegación superior -->
         <header class="topbar">
-            <div class="logo">BILAL EL YOUNOSSI</div>
+            <div class="logo">TRISHAN MIZHQUIRI VALENCIA</div>
             <nav class="nav-links">
                 <a href="index.html">Inicio</a>
                 <a href="proyectos.html" class="active">Proyectos</a>
@@ -67,21 +26,147 @@
             <section class="projects-section">
                 <h2 class="section-title">Proyectos Destacados</h2>
                 <p class="section-description">Estos son mis proyectos más relevantes como administrador de sistemas y redes con especialidad en ciberseguridad</p>
-                
+               
                 <div class="projects-grid">
                     <article class="project-card">
-                        <div class="project-image">
-                            <img src="img/BD.jpg" alt="Sistema de Filtraje de Bases de Datos">
-                        </div>
-                        <h3>Sistema de Filtraje de Bases de Datos</h3>
-                        <p>Implementación de un sistema avanzado de filtrado y monitoreo de bases de datos para detectar accesos no autorizados y actividades sospechosas. Utilizando scripts en bash personalizados, auditorías de seguridad automatizadas y herramientas de monitorización en tiempo real para proteger la integridad de los datos críticos de la organización.</p>
+                        <div class="project-image"><div class="placeholder">
+                            <img src="img/script.jpeg" alt="Scripts de Seguridad">
+                        </div></div>
+                        <h3>Scripts de Seguridad y Automatización Multiplataforma</h3>
+                        <p>Implementación de scripts en Windows, Linux y macOS para tareas críticas de mantenimiento, respaldo, auditoría e integridad del sistema. Diseñados para entornos reales y con enfoque en buenas prácticas de ciberseguridad. Ideal para administradores que buscan automatizar tareas de seguridad sin depender de herramientas propietarias.</p>
                     </article>
                     <article class="project-card">
-                        <div class="project-image">
-                            <img src="img/IA.png" alt="Desarrollo de Webs mediante IA">
-                        </div>
-                        <h3>Desarrollo de Webs mediante IA</h3>
-                        <p>Desarrollo de aplicaciones web utilizando inteligencia artificial para optimizar la administración de servidores y redes. Implementación de chatbots para soporte técnico automatizado y sistemas de detección de anomalías en el tráfico de red mediante algoritmos de machine learning, reduciendo el tiempo de respuesta ante incidentes en un 40%.</p>
+                        <div class="project-image"><div class="placeholder">
+                            <img src="img/monitor.jpg" alt="Sistema de Monitorización">
+                        </div></div>
+                        <h3>Sistema de Monitorización y Análisis de Tráfico de Red</h3>
+                        <p>Entorno de monitorización basado en NetFlow/sFlow para recopilar, analizar y visualizar tráfico de red en tiempo real. Incluye configuración de dispositivos de red, servidor de recolección y detección de anomalías como escaneos de puertos o picos de tráfico. Permite identificar fugas de datos, ataques DDoS o uso no autorizado del ancho de banda. Solución escalable y apta para entornos educativos y PYMEs.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image"><div class="placeholder">
+                            <img src="img/audit-linux-users.png" alt="Auditoría de Usuarios en Linux">
+                        </div></div>
+                        <h3>Script de Auditoría Básica de Usuarios en Linux</h3>
+                        <p>Script en Bash que lista usuarios con UID 0, verifica cuentas sin contraseña y muestra últimas conexiones. Ideal para comprobar configuraciones seguras tras instalar un sistema operativo.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image"><div class="placeholder">
+                            <img src="img/fail2ban-simple.png" alt="Bloqueo de IPs maliciosas">
+                        </div></div>
+                        <h3>Bloqueo Automático de IPs con Múltiples Fallos de Login</h3>
+                        <p>Script que analiza /var/log/auth.log y añade reglas temporales en iptables para bloquear IPs con más de 3 intentos fallidos de acceso SSH.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image"><div class="placeholder">
+                            <img src="img/apache-secure.png" alt="Apache Seguro">
+                        </div></div>
+                        <h3>Configuración Segura de un Servidor Web Apache</h3>
+                        <p>Endurecimiento básico: ocultar versión del servidor, deshabilitar listado de directorios, restringir métodos HTTP y configurar cabeceras de seguridad como X-Content-Type-Options.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image"><div class="placeholder">
+                            <img src="img/wireshark-http-https.jpeg" alt="Comparación HTTP y HTTPS">
+                        </div></div>
+                        <h3>Análisis de Tráfico: HTTP vs HTTPS con Wireshark</h3>
+                        <p>Captura y comparación de tráfico web cifrado y no cifrado. Se demuestra cómo las credenciales viajan en texto claro sin TLS, reforzando la importancia del cifrado.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image"><div class="placeholder">
+                            <img src="img/win-password-policy.jpg" alt="Política de Contraseñas en Windows">
+                        </div></div>
+                        <h3>Política de Contraseñas en Windows con Editor de Directivas Locales</h3>
+                        <p>Configuración de longitud mínima, complejidad, historial y expiración de contraseñas en Windows 10/11 mediante secpol.msc, aplicable en equipos independientes.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image"><div class="placeholder">
+                            <img src="img/robocopy-backup.png" alt="Backup con Robocopy">
+                        </div></div>
+                        <h3>Copia de Seguridad Automatizada con Robocopy</h3>
+                        <p>Script en PowerShell que sincroniza carpetas críticas con una unidad externa usando Robocopy, programado con el Programador de Tareas de Windows.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image"><div class="placeholder">
+                            <img src="img/nmap-local.jpg" alt="Escaneo de Red Local">
+                        </div></div>
+                        <h3>Escaneo de Puertos con Nmap en Red Local</h3>
+                        <p>Identificación de dispositivos activos y servicios expuestos en una red doméstica usando comandos básicos de Nmap, sin scripts ni explotación.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image"><div class="placeholder">
+                            <img src="img/gpg-encrypt.png" alt="Cifrado con GPG">
+                        </div></div>
+                        <h3>Cifrado de Archivos Sensibles con GPG</h3>
+                        <p>Uso de GnuPG para cifrar documentos confidenciales mediante clave simétrica, ideal para proteger información en unidades USB o transferencias internas.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image"><div class="placeholder">
+                            <img src="img/disk-monitor.png" alt="Monitorización de Disco">
+                        </div></div>
+                        <h3>Monitorización de Uso de Disco con Alertas</h3>
+                        <p>Script en Bash que comprueba el uso del disco con df y genera un archivo de alerta si supera el 85%, base para sistemas de monitoreo sencillos.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image"><div class="placeholder">
+                            <img src="img/win-firewall.png" alt="Firewall de Windows">
+                        </div></div>
+                        <h3>Reglas Básicas de Firewall en Windows Defender</h3>
+                        <p>Creación de reglas entrantes/salientes para permitir o bloquear aplicaciones específicas (como un servidor web local) usando el Panel de Control de Windows.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image"><div class="placeholder">
+                            <img src="img/usb-monitor.png" alt="Monitorización de USB">
+                        </div></div>
+                        <h3>Registro de Dispositivos USB Conectados en Linux</h3>
+                        <p>Script que consulta dmesg y /var/log/syslog para listar dispositivos USB conectados recientemente, útil en auditorías de hardware en laboratorios.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image"><div class="placeholder">
+                            <img src="img/hash-check.png" alt="Verificación de Hashes">
+                        </div></div>
+                        <h3>Verificación de Integridad con Funciones Hash</h3>
+                        <p>Uso de sha256sum (Linux) y Get-FileHash (PowerShell) para comprobar que un archivo descargado no ha sido modificado, aplicado a ISOs de sistemas operativos.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image"><div class="placeholder">
+                            <img src="img/ftp-secure.png" alt="FTP Seguro">
+                        </div></div>
+                        <h3>Servidor FTP Básico con Autenticación y Chroot</h3>
+                        <p>Instalación y configuración de vsftpd en Linux con usuarios locales, directorio raíz restringido y sin acceso anónimo, siguiendo buenas prácticas mínimas.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image"><div class="placeholder">
+                            <img src="img/log-analysis-basics.png" alt="Análisis de Logs">
+                        </div></div>
+                        <h3>Análisis Básico de Logs del Sistema</h3>
+                        <p>Uso de grep, tail y less para buscar errores, accesos fallidos o reinicios en archivos como /var/log/syslog o /var/log/auth.log en Linux.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image"><div class="placeholder">
+                            <img src="img/clean-temp.png" alt="Limpieza de Temporales">
+                        </div></div>
+                        <h3>Automatización de Limpieza de Archivos Temporales</h3>
+                        <p>Scripts en Bash y PowerShell que eliminan archivos antiguos en /tmp o %TEMP%, mejorando rendimiento y reduciendo riesgos de acumulación de datos sensibles.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image"><div class="placeholder">
+                            <img src="img/dns-config.png" alt="Configuración de DNS">
+                        </div></div>
+                        <h3>Configuración Manual de Servidores DNS</h3>
+                        <p>Modificación de resolv.conf en Linux y ajustes de adaptador en Windows para usar servidores DNS públicos seguros como Cloudflare (1.1.1.1).</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image"><div class="placeholder">
+                            <img src="img/user-script.jpg" alt="Creación de Usuarios">
+                        </div></div>
+                        <h3>Automatización de Creación de Usuarios en Linux</h3>
+                        <p>Script en Bash que lee un archivo CSV con nombres y crea usuarios con directorio home, grupo asignado y contraseña temporal, útil en entornos educativos.</p>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image"><div class="placeholder">
+                            <img src="img/network-diag.jpg" alt="Diagnóstico de Red">
+                        </div></div>
+                        <h3>Diagnóstico Básico de Problemas de Red</h3>
+                        <p>Uso combinado de ping, traceroute, nslookup y ipconfig/ifconfig para identificar fallos de conectividad, resolución DNS o rutas incorrectas en una red local.</p>
                     </article>
                 </div>
 
@@ -97,7 +182,7 @@
         </main>
 
         <footer>
-            <p>&copy; 2025 BILAL EL YOUNOSSI. Administrador de Sistemas y Redes con especialidad en Ciberseguridad.</p>
+            <p>&copy; 2025 TRISHAN MIZHQUIRI VALENCIA. Administrador de Sistemas y Redes con especialidad en Ciberseguridad.</p>
         </footer>
 
         <script>
@@ -113,6 +198,5 @@
                 });
             });
         </script>
-        <script src="main.js"></script>
     </body>
 </html>
